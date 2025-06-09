@@ -52,7 +52,7 @@ body {
 .team-members {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .veteran-badge img {
-  max-width: 150px;
+  max-width: 250px;
   margin-bottom: 15px;
 }
 
