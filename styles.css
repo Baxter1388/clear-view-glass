@@ -94,6 +94,15 @@ footer {
 /* ---------------------------------- */
 /* Mobile Styles: Media Query */
 /* ---------------------------------- */
+body {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 20px 10px;
