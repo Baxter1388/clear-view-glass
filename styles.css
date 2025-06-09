@@ -31,6 +31,12 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.hero {
+  padding: 40px;
+  background: #e0e0e0;
+  text-align: center;
+}
+
 .services, .about, .team {
   padding: 40px 20px;
   background: white;
