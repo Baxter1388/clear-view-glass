@@ -1,4 +1,4 @@
-body {
+body { 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@ body {
   background-color: #A1A8B2;
 }
 
+/* Responsive Banner */
 .banner {
   position: relative;
   text-align: center;
@@ -17,6 +18,7 @@ body {
   object-fit: cover;
 }
 
+/* Call to Action Button */
 .cta-button {
   position: absolute;
   bottom: 20px;
@@ -29,35 +31,44 @@ body {
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #0056b3;
 }
 
 .hero {
-  padding: 40px;
+  padding: 40px 20px;
   background: #5D88BB;
   text-align: center;
 }
 
-.services, .about, .team {
+.services,
+.about,
+.team {
   padding: 40px 20px;
   background: white;
   margin: 20px;
   border-radius: 10px;
 }
 
+/* Services List */
 .services ul {
   list-style-type: disc;
   padding-left: 20px;
 }
 
+/* Team Members Section */
 .team-members {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 
 .member {
   text-align: center;
+  max-width: 250px;
 }
 
 .member img {
@@ -65,14 +76,49 @@ body {
   border-radius: 10px;
 }
 
+/* Veteran Badge */
 .veteran-badge img {
-  max-width: 400px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
   background: #002b45;
   color: #fff;
+}
+
+/* ---------------------------------- */
+/* Mobile Styles: Media Query */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    bottom: 10px;
+  }
+
+  .services,
+  .about,
+  .team {
+    margin: 10px;
+    padding: 20px 10px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .member {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
