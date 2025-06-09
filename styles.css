@@ -1,12 +1,14 @@
+/* Global Styles */
 body { 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #A1A8B2;
+  font-size: 16px;
 }
 
-/* Responsive Banner */
+/* Banner Section */
 .banner {
   position: relative;
   text-align: center;
@@ -18,12 +20,17 @@ body {
   object-fit: cover;
 }
 
-/* Call to Action Button */
+/* Call to Action Container */
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* CTA Button */
 .cta-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   padding: 15px 25px;
   font-size: 18px;
   color: #fff;
@@ -37,12 +44,14 @@ body {
   background: #0056b3;
 }
 
+/* Hero Section */
 .hero {
   padding: 40px 20px;
   background: #5D88BB;
   text-align: center;
 }
 
+/* Services, About, Team Sections */
 .services,
 .about,
 .team {
@@ -58,7 +67,7 @@ body {
   padding-left: 20px;
 }
 
-/* Team Members Section */
+/* Team Section */
 .team-members {
   display: flex;
   flex-wrap: wrap;
@@ -91,19 +100,14 @@ footer {
   color: #fff;
 }
 
-/* ---------------------------------- */
+/* --------------------------- */
 /* Mobile Styles: Media Query */
-/* ---------------------------------- */
-body {
-  font-size: 16px;
-}
+/* --------------------------- */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
   }
-}
 
-@media (max-width: 768px) {
   .hero {
     padding: 20px 10px;
   }
@@ -111,7 +115,6 @@ body {
   .cta-button {
     font-size: 16px;
     padding: 12px 20px;
-    bottom: 10px;
   }
 
   .services,
